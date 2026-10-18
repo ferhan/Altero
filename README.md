@@ -3,6 +3,7 @@
 [![CI](https://github.com/ferhan/Altero/actions/workflows/ci.yml/badge.svg)](https://github.com/ferhan/Altero/actions/workflows/ci.yml)
 
 **Altero for Claude Code.** Keep several Claude Code accounts on one machine and switch between them without logging out. Altero watches every account's usage and switches for you before the active one hits its limit.
+Started off with claude-swap and added MacOS friendly menu and widget along with other MacOS features
 
 Not affiliated with Anthropic.
 

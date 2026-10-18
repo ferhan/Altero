@@ -7,7 +7,7 @@ seriously.
 
 Report vulnerabilities privately through GitHub's private vulnerability
 reporting:
-[Report a vulnerability](https://github.com/FullContextLabs/Altero/security/advisories/new)
+[Report a vulnerability](https://github.com/ferhan/Altero/security/advisories/new)
 (the repository's **Security** tab, then **Report a vulnerability**).
 
 Do not open a public issue, discussion or pull request for a vulnerability.

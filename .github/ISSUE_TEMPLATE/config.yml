@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Report a security vulnerability
-    url: https://github.com/FullContextLabs/Altero/security/advisories/new
+    url: https://github.com/ferhan/Altero/security/advisories/new
     about: Please report vulnerabilities privately, not as a public issue. See SECURITY.md.

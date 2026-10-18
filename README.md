@@ -1,6 +1,6 @@
 # Altero
 
-[![CI](https://github.com/FullContextLabs/Altero/actions/workflows/ci.yml/badge.svg)](https://github.com/FullContextLabs/Altero/actions/workflows/ci.yml)
+[![CI](https://github.com/ferhan/Altero/actions/workflows/ci.yml/badge.svg)](https://github.com/ferhan/Altero/actions/workflows/ci.yml)
 
 **Altero for Claude Code.** Keep several Claude Code accounts on one machine and switch between them without logging out. Altero watches every account's usage and switches for you before the active one hits its limit.
 
@@ -30,9 +30,9 @@ On macOS the auto-switch engine runs as a per-user LaunchAgent that the TUI and 
 
 One app with everything: the CLI, the TUI, the menu bar, the background engine and the widget. Apple silicon, macOS 14 or later.
 
-With [Homebrew](https://brew.sh), `brew install fullcontextlabs/tap/altero` installs the app and puts `altero` on your PATH. Upgrade with `brew upgrade --cask altero`. Otherwise:
+With [Homebrew](https://brew.sh), `brew install ferhan/tap/altero` installs the app and puts `altero` on your PATH. Upgrade with `brew upgrade --cask altero`. Otherwise:
 
-1. Download `Altero-<version>.dmg` from [Releases](https://github.com/FullContextLabs/Altero/releases/latest).
+1. Download `Altero-<version>.dmg` from [Releases](https://github.com/ferhan/Altero/releases/latest).
 2. Open it and drag **Altero** into **Applications**.
 3. Open Altero from Applications. The menu bar icon appears, and macOS notes that Altero added background items (the menu bar and the auto-switch engine, which start at login).
 4. For the `altero` command in a terminal, accept the offer Altero makes on first launch, or choose **Install Command Line Tool…** from the menu bar later. It links `/usr/local/bin/altero` to the app, and macOS may ask for your administrator password to do so. If you cancel that prompt, it links `~/.local/bin/altero` instead and adds `~/.local/bin` to your PATH in `~/.zprofile`; open a new terminal afterwards. If another `altero` (a uv or pip install) is already there, it is left alone. To link it by hand:
@@ -63,13 +63,13 @@ uv tool install 'altero[menubar]'
 From GitHub, for an unreleased commit:
 
 ```bash
-uv tool install 'git+https://github.com/FullContextLabs/Altero'
+uv tool install 'git+https://github.com/ferhan/Altero'
 ```
 
 From source:
 
 ```bash
-git clone https://github.com/FullContextLabs/Altero.git
+git clone https://github.com/ferhan/Altero.git
 cd Altero
 uv sync --all-extras
 uv run altero help

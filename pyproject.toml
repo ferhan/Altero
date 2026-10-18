@@ -35,9 +35,9 @@ classifiers = [
 menubar = ["rumps>=0.4.0; sys_platform == 'darwin'"]
 
 [project.urls]
-Homepage = "https://github.com/FullContextLabs/Altero"
-Repository = "https://github.com/FullContextLabs/Altero"
-Issues = "https://github.com/FullContextLabs/Altero/issues"
+Homepage = "https://github.com/ferhan/Altero"
+Repository = "https://github.com/ferhan/Altero"
+Issues = "https://github.com/ferhan/Altero/issues"
 
 [project.scripts]
 altero = "altero.cli:main"

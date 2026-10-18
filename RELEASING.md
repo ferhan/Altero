@@ -107,9 +107,9 @@ everything that is missing at once.
 
 5. **Homebrew cask.** Publishing a non-prerelease triggers
    `.github/workflows/homebrew-cask.yml`, which updates `version` and `sha256`
-   in `Casks/altero.rb` of `FullContextLabs/homebrew-tap` (secret
+   in `Casks/altero.rb` of `ferhan/homebrew-tap` (secret
    `HOMEBREW_TAP_TOKEN`). Check the run, then `brew update && brew info --cask
-   fullcontextlabs/tap/altero`. The workflow opens a PR on the tap, since its
+   ferhan/tap/altero`. The workflow opens a PR on the tap, since its
    `main` takes no direct pushes; the owner merges it once the `audit` check
    passes (an admin can merge their own PR without approval). Manual fallback,
    in a clone of the tap:
@@ -119,7 +119,7 @@ everything that is missing at once.
    sha=$(shasum -a 256 build/app/Altero-$v.dmg | cut -d' ' -f1)
    git checkout -b bump-altero-$v
    sed -i '' -E "s/^(  version \").*(\")/\1$v\2/; s/^(  sha256 \").*(\")/\1$sha\2/" Casks/altero.rb
-   brew audit --cask --online fullcontextlabs/tap/altero && git commit -am "altero $v" \
+   brew audit --cask --online ferhan/tap/altero && git commit -am "altero $v" \
        && git push origin bump-altero-$v \
        && gh pr create --base main --head bump-altero-$v --title "altero $v" --fill
    ```

@@ -30,7 +30,7 @@ ENGINE_BUNDLE_ID = "com.fullcontextlabs.altero.engine"
 # PRODUCT_BUNDLE_IDENTIFIER), not the nested engine's. This is what macOS
 # should credit a LaunchAgent to, via AssociatedBundleIdentifiers.
 HOST_BUNDLE_ID = "com.fullcontextlabs.altero"
-RELEASES_URL = "https://github.com/FullContextLabs/Altero/releases/latest"
+RELEASES_URL = "https://github.com/ferhan/Altero/releases/latest"
 # On PATH on stock macOS (/etc/paths). Not /opt/homebrew/bin: Homebrew owns it.
 SYSTEM_BIN = Path("/usr/local/bin")
 ZPROFILE_MARKER = "# added by Altero"

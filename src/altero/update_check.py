@@ -19,7 +19,7 @@ APP_CACHE_PATH = CACHE_DIR / "update_check_app.json"
 CACHE_TTL = 24 * 3600  # 24 hours
 PYPI_URL = "https://pypi.org/pypi/altero/json"
 # Altero.app is not on PyPI; its releases are GitHub releases tagged vX.Y.Z.
-RELEASES_API_URL = "https://api.github.com/repos/FullContextLabs/Altero/releases/latest"
+RELEASES_API_URL = "https://api.github.com/repos/ferhan/Altero/releases/latest"
 APP_UPGRADE_HINT = (
     f"Download the new Altero.app from {bundle.RELEASES_URL}, quit Altero from "
     "its menu bar, and replace the app in Applications."
